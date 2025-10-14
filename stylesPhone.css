@@ -1,0 +1,170 @@
+/* Smartphones pequeños y grandes vertical, y tablets pequeñas */
+@media (max-width: 767px) {
+    #header1 {
+        width: 100vw;
+        height: 7vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        background: #464646ee;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        padding: 0 1rem;
+    }
+    #header1 .logo {
+        width: auto;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: static;
+        top: auto;
+    }
+    img{
+        height: 7vh;
+        width: auto;
+    }
+    #header1 nav {
+        width: auto;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        position: static;
+        bottom: auto;
+    }
+    #circleMenu {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    #circleMenu li {
+        list-style: none;
+    }
+    .circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: box-shadow 0.2s;
+    }
+    .circle:hover {
+        box-shadow: 0 0 0 2px rgba(255,255,255,0.2);
+    }
+    .point {
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: rgb(255, 255, 255);
+        margin: 0 auto;
+    }
+    .active {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #fff;
+        background: rgba(255,255,255,0.08);
+        box-shadow: 0 0 0 2px rgba(255,255,255,0.25);
+        transition: border 0.2s, background 0.2s, box-shadow 0.2s;
+    }
+    #header2 {
+        width: 100vw;
+        height: 7vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        background: #464646ee;
+        box-shadow: 0 -2px 8px rgba(0,0,0,0.15);
+        padding: 0 1rem;
+    }
+    #header2 div {
+        display: flex;
+        width: 100vw;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    #menuDesplegableNav {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 7vh;
+        width: 100vw;
+        height: calc(100vh - 14vh);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #3b3b3b34;
+        backdrop-filter: blur(10px);
+    }
+    label {
+        position: fixed;
+        font-size: 1.5rem;
+        color: white;
+        margin: auto;
+        cursor: pointer;
+        z-index: 110;
+        bottom: 1rem;
+        left: 1rem;
+    }
+    #menuBoton {
+        display: none;
+    }
+    #header2 div nav {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.4s ease, visibility 0.4s ease;
+        display: flex;
+        box-shadow: 8px 0 24px -4px rgba(0,0,0,0.35);
+    }
+    #header2 div input:checked ~ nav {
+        opacity: 1;
+        visibility: visible;
+        display: flex;
+    }
+    html:has(#menuBoton:checked) {
+        overflow-y: hidden;
+    }
+    .menuDesplegable {
+        gap: 10px;
+        font-size: 2em;
+        list-style: none;
+    }
+    body, main {
+        width: 100vw;
+        min-height: 100vh;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+    main {
+        flex: 1 0 auto;
+        padding-top: 7vh;
+        padding-bottom: 7vh;
+    }
+    #header1, #header2 {
+        border: none;
+    }
+}
