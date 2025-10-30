@@ -20,7 +20,7 @@ html{
 
 body{
     font-family: Ilisarniq-Regular, sans-serif;
-    background-color:#464646;
+    background-color:#15304e;
 }
 
 
@@ -42,6 +42,7 @@ main{
     align-items: center;
     position: fixed;
     right: 0px;
+    background-color: #10263f;
 }
 img{
     width: 100%;
@@ -114,7 +115,7 @@ article {
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    color: rgb(221, 221, 221);
+    color: rgb(255, 255, 255);
     padding: 48px 0;
     box-sizing: border-box;
 }
@@ -186,7 +187,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #46464652;
+    background-color: #15304e81;
     backdrop-filter: blur(10px);
 }
 label{
@@ -276,4 +277,21 @@ html:has(#menuBoton:checked) #header1 {
 .iframeResponsive{
     width: 100%;
     height: 300px;
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: rgb(221, 221, 221);
+}
+.contactInfo p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contactInfo i {
+    color: rgb(127, 204, 255);
+    width: 20px;
 }

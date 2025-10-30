@@ -12,7 +12,7 @@
         left: 0;
         right: 0;
         z-index: 100;
-        background: #464646ee;
+        background: #46464648;
         box-shadow: 0 2px 8px rgba(0,0,0,0.15);
         padding: 0 1rem;
     }
@@ -76,7 +76,7 @@
         align-items: center;
         border: 2px solid #fff;
         background: rgba(255,255,255,0.08);
-        box-shadow: 0 0 0 2px rgba(255,255,255,0.25);
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0);
         transition: border 0.2s, background 0.2s, box-shadow 0.2s;
     }
     #header2 {
@@ -91,7 +91,7 @@
         left: 0;
         right: 0;
         z-index: 100;
-        background: #464646ee;
+        background: #46464600;
         box-shadow: 0 -2px 8px rgba(0,0,0,0.15);
         padding: 0 1rem;
     }
