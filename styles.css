@@ -330,6 +330,9 @@ h1{
 .proyectoContainer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
     gap: 10px;
     margin-bottom: 20px;
     padding: 10px;
@@ -352,3 +355,6 @@ h1{
     text-align: center;
     margin-bottom: 10px;
 }
+.proyectosContent {
+    display: flex;
+    align-items: center;
