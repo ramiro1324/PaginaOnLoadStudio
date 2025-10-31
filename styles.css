@@ -128,6 +128,7 @@ article {
     gap: 40px;
     animation: fadeIn 2s ease-in-out;
     text-align: justify;
+    align-items: center;
 }
 
 footer{
