@@ -295,3 +295,36 @@ html:has(#menuBoton:checked) #header1 {
     color: rgb(127, 204, 255);
     width: 20px;
 }
+
+
+.equipoContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.equipoMember{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 33%;
+    background-color: #10263f00;
+    height: 15rem;
+    min-height: fit-content;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.equipoMember h2{
+    color: rgb(127, 204, 255);
+}
+
+h1{
+    color: rgb(127, 204, 255);
+}

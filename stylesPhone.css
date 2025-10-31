@@ -13,9 +13,10 @@
         right: 0;
         z-index: 100;
         background: #46464648;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
         padding: 0 1rem;
     }
+
     #header1 .logo {
         width: auto;
         height: 100%;
@@ -24,10 +25,12 @@
         position: static;
         top: auto;
     }
-    img{
+
+    img {
         height: 7vh;
         width: auto;
     }
+
     #header1 nav {
         width: auto;
         height: 100%;
@@ -36,6 +39,7 @@
         position: static;
         bottom: auto;
     }
+
     #circleMenu {
         display: flex;
         flex-direction: row;
@@ -44,9 +48,11 @@
         justify-content: center;
         align-items: center;
     }
+
     #circleMenu li {
         list-style: none;
     }
+
     .circle {
         width: 20px;
         height: 20px;
@@ -57,9 +63,11 @@
         cursor: pointer;
         transition: box-shadow 0.2s;
     }
+
     .circle:hover {
-        box-shadow: 0 0 0 2px rgba(255,255,255,0.2);
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
     }
+
     .point {
         width: 4px;
         height: 4px;
@@ -67,6 +75,7 @@
         background-color: rgb(255, 255, 255);
         margin: 0 auto;
     }
+
     .active {
         width: 20px;
         height: 20px;
@@ -75,10 +84,11 @@
         justify-content: center;
         align-items: center;
         border: 2px solid #fff;
-        background: rgba(255,255,255,0.08);
+        background: rgba(255, 255, 255, 0.08);
         box-shadow: 0 0 0 2px rgba(255, 255, 255, 0);
         transition: border 0.2s, background 0.2s, box-shadow 0.2s;
     }
+
     #header2 {
         width: 100vw;
         height: 7vh;
@@ -92,9 +102,10 @@
         right: 0;
         z-index: 100;
         background: #46464600;
-        box-shadow: 0 -2px 8px rgba(0,0,0,0.15);
+        box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.15);
         padding: 0 1rem;
     }
+
     #header2 div {
         display: flex;
         width: 100vw;
@@ -102,6 +113,7 @@
         justify-content: center;
         align-items: center;
     }
+
     #menuDesplegableNav {
         display: none;
         position: fixed;
@@ -115,6 +127,7 @@
         background-color: #3b3b3b34;
         backdrop-filter: blur(10px);
     }
+
     label {
         position: fixed;
         font-size: 1.5rem;
@@ -125,30 +138,37 @@
         bottom: 1rem;
         left: 1rem;
     }
+
     #menuBoton {
         display: none;
     }
+
     #header2 div nav {
         opacity: 0;
         visibility: hidden;
         transition: opacity 0.4s ease, visibility 0.4s ease;
         display: flex;
-        box-shadow: 8px 0 24px -4px rgba(0,0,0,0.35);
+        box-shadow: 8px 0 24px -4px rgba(0, 0, 0, 0.35);
     }
-    #header2 div input:checked ~ nav {
+
+    #header2 div input:checked~nav {
         opacity: 1;
         visibility: visible;
         display: flex;
     }
+
     html:has(#menuBoton:checked) {
         overflow-y: hidden;
     }
+
     .menuDesplegable {
         gap: 10px;
         font-size: 2em;
         list-style: none;
     }
-    body, main {
+
+    body,
+    main {
         width: 100vw;
         min-height: 100vh;
         height: 100vh;
@@ -159,12 +179,44 @@
         display: flex;
         flex-direction: column;
     }
+
     main {
         flex: 1 0 auto;
         padding-top: 7vh;
         padding-bottom: 7vh;
     }
-    #header1, #header2 {
+
+    #header1,
+    #header2 {
         border: none;
     }
+
+    .equipoContainer {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .equipoMember {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        background-color: #10263f00;
+        height: 15rem;
+        min-height: fit-content;
+        padding: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .equipoMember h2 {
+        color: rgb(127, 204, 255);
+    }
+
 }
