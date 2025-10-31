@@ -319,3 +319,19 @@ html:has(#menuBoton:checked) #header1 {
 h1{
     color: rgb(127, 204, 255);
 }
+
+.proyecto-imagen{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    
+}
+
+.proyectoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
